@@ -7,16 +7,26 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <?php include('allnavigation.php')?>
-  <div id="ModalLoginForm" class="modal fade">
+  <?php $id=$_GET['id'];?>
+<?php
+  $query=mysql_query("select * from  consultantdetails where consultant_id='$id'")or die(mysql_error());
+$row=mysql_fetch_array($query);
+
+  ?>
+  <div id="ModalLoginForm<?php echo $id; ?>" class="modal fade">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Add Consultant</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Add Contract Details</h5>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
           </div>
-            
+        <?php
+  $query=mysql_query("select * from  consultantdetails where consultant_id='$id'")or die(mysql_error());
+$row=mysql_fetch_array($query);
+
+  ?>    
             <div class="modal-body">
             
                 <form role="form" method="POST" action="addconsultantdetails.php">
@@ -24,9 +34,9 @@
                     <div class="form-group">
                     <div class="form-row">
                     <div class="col-md-6">
-                        <label class="control-label">Name</label>
+                        <label class="control-label">Consultant Name</label>
                         <div>
-                            <input type="text" class="form-control input-lg" name="name" value="" required>
+                            <input type="text" class="form-control input-lg" name="name" value="<?php echo $row['name']; ?>" required>
                         </div>
                     </div>
                   
@@ -259,7 +269,7 @@
       <div class="card mb-3">
        
         <div class="card-body">
-         &nbsp;&nbsp;&nbsp; <button type="button" class="btn btn-primary btn-small" data-toggle="modal" data-target="#ModalLoginForm" ><i class="fa fa-plus-circle" aria-hidden="true"></span></i> Add Consultant Info
+         &nbsp;&nbsp;&nbsp; <button type="button" class="btn btn-primary btn-small" data-toggle="modal" data-target="#ModalLoginForm<?php echo $id; ?>" ><i class="fa fa-plus-circle" aria-hidden="true"></span></i> Add Consultant Info
        </button><br/><br/>
        
           <div class="table-responsive">
@@ -273,7 +283,7 @@
                                              <th><font color="#4d4d4d">SSN</font></th>
                                              
                                              <th><font color="#4d4d4d">Work Type</font></th>
-                                             <th><font color="#4d4d4d">Contract</font></th>
+                                             <th><font color="#4d4d4d">Work Status</font></th>
                                              
                                              <th><font color="#4d4d4d">Status</font></th>
                                          	<th><font color="#4d4d4d">Action</font></th>
@@ -293,8 +303,8 @@
                                             <td><?php echo $row ['email']; ?></td>
                                             <td><?php echo $row ['ssn']; ?></td>
                                             
-                                            <td style="text-align:center;"><?php echo $row ['worktype']; ?></td>
-                                            <td><a href="consultants-contract.php<?php echo '?id='.$id; ?>"> <font color="#424242"><font color="#4e80d1">Contract</font></a></td>
+                                            <td><?php echo $row ['worktype']; ?></td>
+                                            <td><?php echo $row ['workstatus']; ?></td>
                                             
                                             <td><?php echo $row ['status']; ?></td>
                                             

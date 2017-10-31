@@ -36,21 +36,22 @@
             <span class="nav-link-text">End Client</span>
           </a>
         </li>
-<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="consultants.php">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="source.php">
             <i class="fa fa-fw fa-users"></i>
-            <span class="nav-link-text">consultant</span>
+            <span class="nav-link-text">Manage Source</span>
           </a>
         </li>
+
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
             <i class="fa fa-server"></i>
-            <span class="nav-link-text">IP Details</span>
+            <span class="nav-link-text">Consultants</span>
           </a>
           <ul class="sidenav-second-level collapse" id="collapseComponents">
             <li>
-              <a href="allipdetails.php">All IP Details</a>
+              <a href="consultants.php">Consultants</a>
             </li>
             <li>
               <a href="11seriesipdetails.php">11 Series</a>
@@ -64,107 +65,18 @@
           </ul>
         </li>
       
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="wifi.php">
-            <i class="fa fa-fw fa-wifi"></i>
-            <span class="nav-link-text">Wifi Information</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="nortels.php">
-            <i class="fa fa-fw fa-phone"></i>
-            <span class="nav-link-text">Nortel Details</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="printers.php">
-            <i class="fa fa-fw fa-print"></i>
-            <span class="nav-link-text">Printer Information</span>
-          </a>
-        </li>
         
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-file"></i>
-            <span class="nav-link-text">Employee Mail Details</span>
-          </a>
-          <ul class="sidenav-second-level collapse" id="collapseExamplePages">
-            <li>
-              <a href="newemployee_emaildetails.php">New Employee Mail Details</a>
-            </li>
-            <li>
-              <a href="exitemployee_emaildetails.php">Exit Employee Mail Details</a>
-            </li>
-            
-          </ul>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="laptopinfo.php">
-            <i class="fa fa-fw fa-laptop"></i>
-            <span class="nav-link-text">Laptop Information</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="mobiles.php">
-            <i class="fa fa-fw fa-mobile"></i>
-            <span class="nav-link-text">Gadgets Information</span>
-          </a>
-        </li>
-         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="contacts.php">
-            <i class="fa fa-fw fa fa-address-card"></i>
-            <span class="nav-link-text">Contact List</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="fortiwifi.php">
-            <i class="fa fa-fw fa fa-wifi"></i>
-            <span class="nav-link-text">Forti Wifi List</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="switches.php">
-            <i class="fa fa-fw fa fa-sitemap"></i>
-            <span class="nav-link-text">Siruseri Switch Details</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
-            <i class="fa fa-fw fa-sitemap"></i>
-            <span class="nav-link-text">Menu Levels</span>
-          </a>
-          <ul class="sidenav-second-level collapse" id="collapseMulti">
-            <li>
-              <a href="#">Second Level Item</a>
-            </li>
-            <li>
-              <a href="#">Second Level Item</a>
-            </li>
-            <li>
-              <a href="#">Second Level Item</a>
-            </li>
-            <li>
-              <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
-              <ul class="sidenav-third-level collapse" id="collapseMulti2">
-                <li>
-                  <a href="#">Third Level Item</a>
-                </li>
-                <li>
-                  <a href="#">Third Level Item</a>
-                </li>
-                <li>
-                  <a href="#">Third Level Item</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-          <a class="nav-link" href="#">
-            <i class="fa fa-fw fa-link"></i>
-            <span class="nav-link-text">Link</span>
-          </a>
-        </li>
+        
+        
+        
+        
+       
+        
+         
+        
+        
+        
+        
       </ul>
       <ul class="navbar-nav sidenav-toggler">
         <li class="nav-item">
